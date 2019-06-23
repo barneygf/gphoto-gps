@@ -1,0 +1,93 @@
+[
+    {
+        "mode": "NULLABLE",
+        "name": "accuracy",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "longitudeE7",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "latitudeE7",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "timestampMs",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "REPEATED",
+        "name": "activity",
+        "type": "RECORD",
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "timestampMs",
+                "type": "INTEGER"
+            },
+            {
+                "mode": "REPEATED",
+                "name": "activity",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "confidence",
+                        "type": "INTEGER"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                    }
+                ]
+            },
+            {
+                "mode": "REPEATED",
+                "name": "extra",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "mode": "NULLABLE",
+                        "name": "name",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                    },
+                    {
+                        "mode": "NULLABLE",
+                        "name": "intVal",
+                        "type": "INTEGER"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "heading",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "velocity",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "verticalAccuracy",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "altitude",
+        "type": "INTEGER"
+    }
+]
